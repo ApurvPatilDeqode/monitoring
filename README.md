@@ -42,6 +42,7 @@ https://www.liquidweb.com/kb/what-is-grafana/
 
 **NODE EXPORTER DASHBOARD** Adding node-exporter dashboard , gives elaborative visualization of ec2 instance memory,cpu,process etc.
 
+
 4. Future Enhancement:
 - As the configuration setup supposed to be done over 10 machines , it will create redundancy. The better solution over this issue is using Ansible as a configuration management tool.
 We will configure ansible over master server and register other ec2 instances with that particular server. The simple configuration script will install required packages over all the servers.
