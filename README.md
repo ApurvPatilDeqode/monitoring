@@ -56,11 +56,6 @@ https://linuxhint.com/install-configure-prometheus-alert-manager-ubuntu/
 - As the configuration setup supposed to be done over 10 machines , it will create redundancy for manual installation. The better solution to over-come this issue is using **Ansible** as a configuration management tool.
 We will configure ansible server over ec2 instance as a master server and register other ec2 instances with master server. The simple package installation playbook/script will install required packages over all the servers.
 
-- For monitoring the instances we will add private IP addresses of instances into targets of prometheus configuration file.
-
-- To enable alerting over the instances, we have created custom alert_rules.yml file which will monitor instances according to provided alert expression.
-
-- To send alerts over email we need to set up  alertmanager and need to configure with prometheus.
 
 ![NGINX](nginx_mertix_graph.png)
 ![PROMETHEUS](prometheus_target_with_private_networks.png)
