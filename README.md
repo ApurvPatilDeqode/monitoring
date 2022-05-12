@@ -51,3 +51,7 @@ We will configure ansible server over ec2 instance as a master server and regist
 - To enable alerting over the instances, we have created custom alert_rules.yml file which will monitor instances according to provided alert expression.
 
 - To send alerts over email we need to set up  alertmanager and need to configure with prometheus.
+
+![NGINX](nginx_mertix_graph.png)
+![PROMETHEUS](prometheus_target_with_private_networks.png)
+![GRAFANA](grafana_node_exporter_dashboard.png)
