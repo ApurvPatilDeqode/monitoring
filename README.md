@@ -29,7 +29,7 @@ https://blog.ruanbekker.com/blog/2020/04/25/nginx-metrics-on-prometheus-with-the
 ```
 https://ourcodeworld.com/articles/read/1686/how-to-install-prometheus-node-exporter-on-ubuntu-2004
 ```
-2. Prometheus Server with Grafana-
+2. Prometheus Server with Grafana and Alertmanager-
 - Prometheus:
 ```
 https://linoxide.com/how-to-install-prometheus-on-ubuntu/
@@ -38,6 +38,12 @@ https://linoxide.com/how-to-install-prometheus-on-ubuntu/
 ```
 https://www.liquidweb.com/kb/what-is-grafana/
 ```
+
+- Alertmanager
+```
+https://linuxhint.com/install-configure-prometheus-alert-manager-ubuntu/
+```
+
 ### 3. Custom Configurations:
 - **Prometheus Configuration:** With prometheus configuration file, targets are registered to monitor the NGINX server and Node-Exporter with the specified port.
 
