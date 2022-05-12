@@ -1,0 +1,13 @@
+[Unit]
+Description=Alertmanager for prometheus
+
+[Service]
+Restart=always
+User=root
+ExecStart=/opt/alertmanager/alertmanager-0.22.2.linux-amd64/alertmanager --config.file=/opt/alertmanager/alertmanager-0.22.2.linux-amd64/alertmanager.yml --storage.path=/opt/alertmanager/data            
+ExecReload=/bin/kill -HUP $MAINPID
+TimeoutStopSec=20s
+SendSIGKILL=no
+
+[Install]
+WantedBy=multi-user.target

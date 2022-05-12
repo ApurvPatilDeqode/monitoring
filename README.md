@@ -59,3 +59,5 @@ We will configure ansible server over ec2 instance as a master server and regist
 ![NGINX](nginx_mertix_graph.png)
 ![PROMETHEUS](prometheus_target_with_private_networks.png)
 ![GRAFANA](grafana_node_exporter_dashboard.png)
+![ALERTMANAGER](alertmanager-configuration.png)
+![ALERT](alert-expression.png)
