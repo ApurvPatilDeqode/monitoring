@@ -16,10 +16,14 @@
 - Security Group (Ports: SSH-22 , HTTPS-443 , CustomTCP-8080,9100,3000,9093,9090)
 
 ### 2. Installation Steps:
-   1. NGINX with Node-exporter
+   1. NGINX with Prometheus-Node-Exporter & Node-Exporter
 - NGINX:
 ```
 https://www.nginx.com/blog/setting-up-nginx/
+```
+- Prometheus-Node-Exporter
+```
+https://blog.ruanbekker.com/blog/2020/04/25/nginx-metrics-on-prometheus-with-the-nginx-log-exporter/
 ```
 - Node-Exporter:
 ```
