@@ -1,6 +1,6 @@
 listen {
   port = 4040
-  address = "172.31.89.251"
+  address = "<private-ip>"
 }
 
 consul {

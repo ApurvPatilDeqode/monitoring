@@ -13,6 +13,8 @@ receivers:
       - to: "receiver_mail_id@gmail.com"
         from: "mail_id@gmail.com"
         smarthost: smtp.gmail.com:587
-        auth_username: "mail_id@gmail.com"
+        auth_username: "mail_id@gmail.com" #same as input given in `from:`
         auth_identity: "mail_id@gmail.com"
         auth_password: "password"
+# NOTE: Please make sure that email address from which alerts will be forwardedto target
+# email suppoed to be enabled with permission of `allow third party app to access your email`. Please go-through readme for further details.

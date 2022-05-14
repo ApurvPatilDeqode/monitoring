@@ -9,3 +9,6 @@ groups:
         annotations:
           summary: "Instance {{ $labels.instance }} down"
           description: "{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 5 minutes."
+# This alert expression will check status of target instance whether it is up and running
+# or down for every 5 mins of time interval. If target instance is down it will trigger alert
+# as shown in images `alerts_in_pending.png & alerts_in_firing.png`.

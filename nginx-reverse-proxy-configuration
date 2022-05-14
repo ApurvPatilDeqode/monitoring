@@ -8,11 +8,16 @@ server {
         root   /usr/share/nginx/html;
         index  index.html index.htm;
     }
+    # -------------------------------
+    # This part supposed to be added into `default.conf` file
+
     location /metrics {
        proxy_set_header Host $host;
        proxy_set_header X-Real-IP $remote_addr;
-       proxy_pass http://<private-ip>:9090/metrics;
+       proxy_pass http://<private-ip>:9090/metrics; #private ip address of prometheus server
     }
+    # ---------------------------------
+    
     #error_page  404              /404.html;
 
     # redirect server error pages to the static page /50x.html
