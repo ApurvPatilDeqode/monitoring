@@ -249,7 +249,7 @@ With alertmanager we have also achieved to receive email notifications on servic
     $ sudo systemctl status alertmanager.service
    ```
 
-## Custom Configurations:
+### 3.Custom Configurations:
    - **1.Prometheus**
     To monitor the NGINX instance we have to register it's service ports that are working as service endpoints into prometheus server. The way we can do that is by adding the IP addresses of service running over instance into **prometheus.yml**file. 
     This file contains 3 sections in our case
